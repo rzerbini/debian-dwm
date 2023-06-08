@@ -1,8 +1,6 @@
 # thor-dwm
  install dwm on debian bulleye
 
-DWM ob Debian Bulleye
-
 ## Resume
 
 ### Download
