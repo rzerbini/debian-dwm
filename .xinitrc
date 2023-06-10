@@ -38,23 +38,25 @@ fi
 # slstatus Bar
 #/usr/local/bin/slstatus &
 
-xrandr --output Virtual1 --mode 1440x900
-
-# Restore wallpaper
-nitrogen --restore &
-
 #Compositor
-#compton -b &
-picom -CG --no-fading-openclose &
+compton -b &
+#picom -CG --no-fading-openclose &
 
 
 #loop 
-while xsetroot -name "`date` `uptime | sed 's/.*,//'`"
-do
-	sleep 1
-done &
+#while xsetroot -name "`date` `uptime | sed 's/.*,//'`"
+#do
+#	sleep 1
+#done &
 
-#~/.config/chadwm/scripts/bar.sh &
+~/video.sh
+
+xrandr --output Virtual1 --mode 1920x1080_60.00
+
+# Restore wallpaper
+nitrogen --set-zoom-fill ~/Pictures/wallhaven-1920x1080.png 
+
+/usr/local/bin/slstatus &
 
 exec dwm
 
