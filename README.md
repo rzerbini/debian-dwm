@@ -1,8 +1,6 @@
 # debian-dwm
  install dwm on debian bulleye
 
-## Resume
-
 ### Download
 First we need to download dwm. Replace the version number as needed. I will also download st, a terminal emulator, and dmenu, a program to quickly launch executables. Both of these make dwm more usable.
 
