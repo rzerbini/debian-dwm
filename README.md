@@ -11,6 +11,8 @@ wget https://dl.suckless.org/dwm/dwm-6.4.tar.gz
 wget https://dl.suckless.org/st/st-0.9.tar.gz
 wget https://dl.suckless.org/tools/dmenu-5.2.tar.gz
 ````
+optional Slstatus - You can browse its source code repository or get a copy using the following command:
+git clone https://git.suckless.org/slstatus
 
 untar
 
