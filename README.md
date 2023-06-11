@@ -1,7 +1,5 @@
-# thor-dwm
+# debian-dwm
  install dwm on debian bulleye
-
-## Resume
 
 ### Download
 First we need to download dwm. Replace the version number as needed. I will also download st, a terminal emulator, and dmenu, a program to quickly launch executables. Both of these make dwm more usable.
@@ -13,6 +11,8 @@ wget https://dl.suckless.org/dwm/dwm-6.4.tar.gz
 wget https://dl.suckless.org/st/st-0.9.tar.gz
 wget https://dl.suckless.org/tools/dmenu-5.2.tar.gz
 ````
+optional Slstatus - You can browse its source code repository or get a copy using the following command:
+git clone https://git.suckless.org/slstatus
 
 untar
 
@@ -25,7 +25,7 @@ tar xf dmenu-5.2.tar.gz
 load dependences
 
 ````
-sudo apt install make gcc libx11-dev libxft-dev libxinerama-dev xorg
+sudo apt install make gcc libx11-dev libxft-dev libxinerama-dev xorg thunar kitty nitrogen
 ````
 compile
 
