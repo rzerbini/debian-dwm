@@ -11,6 +11,8 @@ sudo apt install -y make gcc git wget libx11-dev libxft-dev libxinerama-dev xorg
 
 sudo apt install -y thunar kitty nitrogen mousepad fonts-firacode lxappearance
 
+sudo apt install -y openssh-server
+
 # INCLUDES make,etc.
 # sudo apt install -y build-essential 
 
@@ -102,7 +104,7 @@ cat > ./temp << "EOF"
 Encoding=UTF-8
 Name=dwm
 Comment=Dynamic window manager
-Exec=dwm
+Exec=/home/thor/debian-dwm/exec-dwm
 Icon=dwm
 Type=XSession
 EOF
