@@ -128,7 +128,8 @@ done
 # Install Nerd Fonts
 #source ~/dwm-debian/nerdfonts.sh
 
-cp ~/.config/debian-dwm/.xinitrc ~/.xinitrc
+cp ~/.config/debian-dwm/.xinitrc ~/.xinitrc~
+cp ~/.config/debian-dwm/Pictures/*.* ~/Pictures/
 
 #sudo apt autoremove
 
