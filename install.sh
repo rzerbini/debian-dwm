@@ -115,11 +115,10 @@ sudo cp ./temp /usr/share/xsessions/dwm.desktop;rm ./temp
 #sudo apt install -y libx11-dev
 
 # Move install directory, make, and install
-cd ~
-git clone https://github.com/rzerbini/debian-dwm.git
+# cd ~
+# git clone https://github.com/rzerbini/debian-dwm.git
 
-cd ~/debian-dwm/.config/dwm
-/dwm/
+cd ~
 tools=( "dwm-6.4" "dmenu-5.2" "st-0.9" "slstatus" )
 for tool in ${tools[@]}
 do 
