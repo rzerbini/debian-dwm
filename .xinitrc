@@ -35,9 +35,6 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-# slstatus Bar
-#/usr/local/bin/slstatus &
-
 #Compositor
 compton -b &
 #picom -CG --no-fading-openclose &
@@ -49,13 +46,15 @@ compton -b &
 #	sleep 1
 #done &
 
-~/video.sh
-
+#~/video.sh
+xrandr --newmode "1920x1080_60.00"  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync
+xrandr --addmode Virtual1 1920x1080_60.00
 xrandr --output Virtual1 --mode 1920x1080_60.00
 
 # Restore wallpaper
-nitrogen --set-zoom-fill ~/Pictures/wallhaven-1920x1080.png 
+nitrogen --set-zoom-fill ~/Pictures/wallhaven-9mqvz1_1920x1080.png 
 
+# slstatus Bar
 /usr/local/bin/slstatus &
 
 exec dwm
