@@ -50,7 +50,7 @@ do
 done &
 exec dwm
 ````
-
+or use .xinitrc in your home and command "startx"
 
 
 
