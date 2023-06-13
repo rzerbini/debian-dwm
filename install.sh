@@ -128,6 +128,8 @@ done
 # Install Nerd Fonts
 #source ~/dwm-debian/nerdfonts.sh
 
+cp ~/.config/debian-dwm/.xinitrc ~/.xinitrc
+
 #sudo apt autoremove
 
 printf "\e[1;32mDone! you can now reboot.\e[0m\n"
