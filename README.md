@@ -25,7 +25,7 @@ tar xf dmenu-5.2.tar.gz
 load dependences
 
 ````
-sudo apt install make gcc libx11-dev libxft-dev libxinerama-dev xorg thunar kitty nitrogen mousepad fonts-firacode
+sudo apt install -y make gcc git wget libx11-dev libxft-dev libxinerama-dev xorg thunar kitty nitrogen mousepad fonts-firacode
 ````
 compile
 
