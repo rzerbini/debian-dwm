@@ -77,10 +77,10 @@ sudo apt install -y nitrogen
 xdg-user-dirs-update
 
 # Install Lightdm Console Display Manager
-# sudo apt install -y lightdm lightdm-gtk-greeter-settings slick-greeter
-# sudo systemctl enable lightdm
-# echo 'greeter-session=slick-greeter' >>  sudo tee -a /etc/lightdm/lightdm.conf
-# echo 'greeter-hide-user=false' >>  sudo tee -a /etc/lightdm/lightdm.conf
+sudo apt install -y lightdm lightdm-gtk-greeter-settings slick-greeter
+sudo systemctl enable lightdm
+echo 'greeter-session=slick-greeter' >>  sudo tee -a /etc/lightdm/lightdm.conf
+echo 'greeter-hide-user=false' >>  sudo tee -a /etc/lightdm/lightdm.conf
 
 # Ly Console Manager
 # Needed packages
