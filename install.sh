@@ -83,6 +83,7 @@ sudo apt install -y lightdm lightdm-gtk-greeter-settings slick-greeter
 sudo systemctl enable lightdm
 echo 'greeter-session=slick-greeter' >>  sudo tee -a /etc/lightdm/lightdm.conf
 echo 'greeter-hide-user=false' >>  sudo tee -a /etc/lightdm/lightdm.conf
+sudo cp ~/debian-dwm/sleek-greeter.conf /etc/lightdm/sleek-greeter.conf
 
 # Ly Console Manager
 # Needed packages
