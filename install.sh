@@ -130,8 +130,8 @@ done
 # Install Nerd Fonts
 #source ~/dwm-debian/nerdfonts.sh
 
-cp /home/thor/debian-dwm/.xinitrc ~/.xinitrc~
-cp /home/thor/debian-dwm/Pictures/ ~/Pictures/
+cp /home/thor/debian-dwm/.xinitrc ~/.xinitrc
+cp /home/thor/debian-dwm/Pictures/*.* ~/Pictures/
 
 sudo chmod +x /home/thor/debian-dwm/exec-dwm
 
