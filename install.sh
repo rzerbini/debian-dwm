@@ -1,4 +1,4 @@
-#!/bin/bash
+ #!/bin/bash
 
 # Default packages are for the configuration and corresponding .config folders
 # Install packages after installing base Debian with no GUI
@@ -111,7 +111,6 @@ Type=XSession
 EOF
 sudo cp ./temp /usr/share/xsessions/dwm.desktop;rm ./temp
 
-
 # Creating directories
 #mkdir ~/.config/suckless
 
@@ -131,8 +130,10 @@ done
 # Install Nerd Fonts
 #source ~/dwm-debian/nerdfonts.sh
 
-cp ~/.config/debian-dwm/.xinitrc ~/.xinitrc~
-cp ~/.config/debian-dwm/Pictures/*.* ~/Pictures/
+cp $HOME/debian-dwm/.xinitrc ~/.xinitrc~
+cp $Home/debian-dwm/Pictures/*.* ~/Pictures/
+
+sudo chmod +x /home/thor/debian-dwm/exec-dwm
 
 #sudo apt autoremove
 
