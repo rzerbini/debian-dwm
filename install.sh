@@ -79,21 +79,21 @@ sudo apt install -y nitrogen
 xdg-user-dirs-update
 
 # Install Lightdm Console Display Manager
-sudo apt install -y lightdm lightdm-gtk-greeter-settings slick-greeter
-sudo systemctl enable lightdm
-echo 'greeter-session=slick-greeter' >>  sudo tee -a /etc/lightdm/lightdm.conf
-echo 'greeter-hide-user=false' >>  sudo tee -a /etc/lightdm/lightdm.conf
-sudo cp ~/debian-dwm/sleek-greeter.conf /etc/lightdm/sleek-greeter.conf
+# sudo apt install -y lightdm lightdm-gtk-greeter-settings slick-greeter
+# sudo systemctl enable lightdm
+# echo 'greeter-session=slick-greeter' >>  sudo tee -a /etc/lightdm/lightdm.conf
+# echo 'greeter-hide-user=false' >>  sudo tee -a /etc/lightdm/lightdm.conf
+# sudo cp ~/debian-dwm/sleek-greeter.conf /etc/lightdm/sleek-greeter.conf
 
 # Ly Console Manager
 # Needed packages
-# sudo apt install -y libpam0g-dev libxcb-xkb-dev
-#cd 
-#git clone --recurse-submodules https://github.com/fairyglade/ly
-#cd ly
-#make
-#sudo make install installsystemd
-#sudo systemctl enable ly.service
+sudo apt install -y libpam0g-dev libxcb-xkb-dev
+cd ~
+git clone --recurse-submodules https://github.com/fairyglade/ly
+cd ly
+make
+sudo make install installsystemd
+sudo systemctl enable ly.service
 
 # XSessions and dwm.desktop
 if [[ ! -d /usr/share/xsessions ]]; then
@@ -130,8 +130,8 @@ done
 # Install Nerd Fonts
 #source ~/dwm-debian/nerdfonts.sh
 
-cp $HOME/debian-dwm/.xinitrc ~/.xinitrc~
-cp $Home/debian-dwm/Pictures/*.* ~/Pictures/
+cp /home/thor/debian-dwm/.xinitrc ~/.xinitrc~
+cp /home/thor/debian-dwm/Pictures/ ~/Pictures/
 
 sudo chmod +x /home/thor/debian-dwm/exec-dwm
 
