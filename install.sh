@@ -88,7 +88,6 @@ xdg-user-dirs-update
 # Ly Console Manager
 # Needed packages
 sudo apt install -y libpam0g-dev libxcb-xkb-dev
-cd ~
 git clone --recurse-submodules https://github.com/fairyglade/ly
 cd ly
 make
@@ -105,7 +104,7 @@ cat > ./temp << "EOF"
 Encoding=UTF-8
 Name=dwm
 Comment=Dynamic window manager
-Exec=/home/thor/debian-dwm/exec-dwm
+Exec=/home/thor/exec-dwm
 Icon=dwm
 Type=XSession
 EOF
@@ -124,16 +123,17 @@ cd ~
 tools=( "dwm-6.4" "dmenu-5.2" "st-0.9" "slstatus" )
 for tool in ${tools[@]}
 do 
-	cd ~/debian-dwm/.config/dwm/$tool;make;sudo make clean install;cd ..
+	cd ./dwm/$tool;make;sudo make clean install;cd ..
 done
 
 # Install Nerd Fonts
 #source ~/dwm-debian/nerdfonts.sh
 
-cp /home/thor/debian-dwm/.xinitrc ~/.xinitrc
-cp /home/thor/debian-dwm/Pictures/*.* ~/Pictures/
+cp ./.xinitrc ~/.xinitrc
+cp ./Pictures/*.* ~/Pictures/
+cp ./exec-dwm ~/
 
-sudo chmod +x /home/thor/debian-dwm/exec-dwm
+sudo chmod +x /home/thor/exec-dwm
 
 #sudo apt autoremove
 
